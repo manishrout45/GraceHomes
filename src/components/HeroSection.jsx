@@ -3,24 +3,27 @@ import React, { useState } from "react";
 const slides = [
   {
     id: 0,
-    title: "Refined Dining Room Interior",
-    subtitle: "Timeless Interior Excellence",
-    desc: "Elegant dining designs that blend comfort, luxury, and a sophisticated ambiance.",
-    image: "https://img.freepik.com/premium-photo/photo-interior-design-modern-classic-style-living-dining-area-with-white-marble-white_1149331-24956.jpg?w=740&q=80",
+    title: "Premium Residential Projects",
+    subtitle: "Building Homes, Creating Lifestyles",
+    desc: "Thoughtfully designed residential projects crafted with superior construction quality, modern architecture, and timely delivery.",
+    image:
+      "https://img.freepik.com/premium-photo/classic-modern-batak-house-ambarita-resort-hotel-indonesian-people-foreign-travelers-travel-visit-rent-rest-relax-tomok-samosir-sumatera-utara-north-sumatra-indonesia_258052-2938.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 1,
-    title: "Modern Bedroom Interior",
-    subtitle: "Luxury & Comfort Combined",
-    desc: "Beautiful bedroom interiors crafted for ultimate relaxation and style.",
-    image: "https://img.freepik.com/free-photo/small-juvenile-bedroom-arrangement_23-2151113835.jpg?w=740&q=80",
+    title: "High-Rise Apartment Developments",
+    subtitle: "Trusted Real Estate Builder",
+    desc: "Iconic high-rise apartments built with precision, safety, and comfort to redefine urban living experiences.",
+    image:
+      "https://img.freepik.com/free-photo/close-up-futuristic-city-landscape-skyscrapers_231208-7587.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
-    title: "Refined Lounge Area Interior",
-    subtitle: "Timeless Interior Excellence",
-    desc: "Elegant lounge designs that combine comfort, timeless style, and ambiance.",
-    image: "https://img.freepik.com/free-photo/elegant-living-room-with-brown-tones-modern-decor_23-2151965523.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Commercial & Mixed-Use Projects",
+    subtitle: "Building for Growth",
+    desc: "Strategically developed commercial and mixed-use spaces designed to support businesses and long-term investment value.",
+    image:
+      "https://img.freepik.com/premium-photo/modern-commercial-building-with-large-glass-windows-stone-veneer_925376-257995.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
 ];
 
@@ -32,8 +35,8 @@ export default function HeroSection() {
       className="
         relative 
         w-full 
-        h-[110vh]               
-        md:h-[115vh]            
+        h-[126vh]              
+        md:h-[126vh]            
         lg:h-[130vh]            
         xl:h-[120vh]            
         2xl:h-[150vh]           
@@ -57,9 +60,9 @@ export default function HeroSection() {
           {slides[active].subtitle}
         </p>
 
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold leading-snug mb-6">
-          {slides[active].title.split("Interior")[0]}
-          <span className="text-[#c59a83]"> Interior</span>
+        <h1 className="fade-right text-4xl md:text-5xl lg:text-7xl font-semibold leading-snug mb-6">
+          {slides[active].title.split("Development")[0]}
+          <span className="text-[#c59a83]"> Development</span>
         </h1>
 
         <p className="max-w-2xl text-sm md:text-base lg:text-lg opacity-90">
@@ -127,46 +130,56 @@ export default function HeroSection() {
                 text-center
               "
             >
-              {/* Dining */}
-              <button
-                onClick={() => setActive(0)}
-                className={`
-                  py-6 min-w-[250px] md:min-w-0 
-                  border-r border-white/20 
-                  transition 
-                  ${active === 0 ? "bg-white/20" : "hover:bg-white/10"}
-                `}
-              >
-                <i className="fas fa-utensils text-2xl mb-2"></i>
-                <p className="text-lg">Dining Room Design</p>
-              </button>
+              {/* Residential Projects */}
+                <button
+                  onClick={() => setActive(0)}
+                  className={`
+                    py-6 min-w-[250px] md:min-w-0 
+                    border-r border-white/20 
+                    transition 
+                    ${active === 0 ? "bg-white/20" : "hover:bg-white/10"}
+                  `}
+                >
+                  <i className="fas fa-home text-2xl mb-2"></i>
+                  <p className="text-lg font-medium">Residential Projects</p>
+                  <span className="block text-sm opacity-80">
+                    Villas & Apartments
+                  </span>
+                </button>
 
-              {/* Bedroom */}
-              <button
-                onClick={() => setActive(1)}
-                className={`
-                  py-6 min-w-[250px] md:min-w-0 
-                  border-r border-white/20 
-                  transition 
-                  ${active === 1 ? "bg-white/20" : "hover:bg-white/10"}
-                `}
-              >
-                <i className="fas fa-bed text-2xl mb-2"></i>
-                <p className="text-lg">Bedroom Design</p>
-              </button>
+                {/* Apartments */}
+                <button
+                  onClick={() => setActive(1)}
+                  className={`
+                    py-6 min-w-[250px] md:min-w-0 
+                    border-r border-white/20 
+                    transition 
+                    ${active === 1 ? "bg-white/20" : "hover:bg-white/10"}
+                  `}
+                >
+                  <i className="fas fa-building text-2xl mb-2"></i>
+                  <p className="text-lg font-medium">High-Rise Apartments</p>
+                  <span className="block text-sm opacity-80">
+                    Modern Urban Living
+                  </span>
+                </button>
 
-              {/* Lounge */}
-              <button
-                onClick={() => setActive(2)}
-                className={`
-                  py-6 min-w-[250px] md:min-w-0 
-                  transition 
-                  ${active === 2 ? "bg-white/20" : "hover:bg-white/10"}
-                `}
-              >
-                <i className="fas fa-couch text-2xl mb-2"></i>
-                <p className="text-lg">Lounge Room Design</p>
-              </button>
+                {/* Commercial */}
+                <button
+                  onClick={() => setActive(2)}
+                  className={`
+                    py-6 min-w-[250px] md:min-w-0 
+                    transition 
+                    ${active === 2 ? "bg-white/20" : "hover:bg-white/10"}
+                  `}
+                >
+                  <i className="fas fa-city text-2xl mb-2"></i>
+                  <p className="text-lg font-medium">Commercial Projects</p>
+                  <span className="block text-sm opacity-80">
+                    Office & Retail Spaces
+                  </span>
+                </button>
+
             </div>
           </div>
         </div>

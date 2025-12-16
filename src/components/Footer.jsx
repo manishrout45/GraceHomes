@@ -5,144 +5,204 @@ import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 export default function Footer() {
   return (
     <footer
-      className="relative bg-no-repeat bg-cover bg-center text-[#E6E2D4] pt-16 pb-10"
-      style={{
-        backgroundImage:
-          "url('/assets/images/Artitecture-bg-2.jpg')",
-      }}
+      className="relative bg-no-repeat bg-cover bg-center text-[#E6E2D4] pt-10 pb-6"
+      style={{ backgroundImage: "url('/assets/images/Artitecture-bg-2.jpg')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#303123]/90"></div>
 
       {/* CONTENT WRAPPER */}
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* TOP ROW */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           
           {/* LEFT BLOCK */}
           <div>
-            <div className="flex items-center gap-3">
-              <div className="pt-2 px-2 rounded-lg">
-                <img
-                  src="/assets/images/logo/grace_homes_alpha-01.png"
-                  alt="Logo"
-                  className="w-24 h-24 object-contain"
-                />
-              </div>
+            <div className="flex items-center gap-2">
+              <img
+                src="/assets/images/logo/grace_homes_alpha-02.png"
+                alt="Grace Homes Logo"
+                className="w-24 h-24 object-contain"
+              />
             </div>
 
-            <p className="text-sm text-[#EDE9DE] mt-4 max-w-xs leading-relaxed">
-              Experience the perfect blend of style, comfort, and functionality. 
-              We craft interiors that not only look stunning but also enhance your living lifestyle.
+            <p className="text-sm text-[#EDE9DE] mt-3 leading-relaxed max-w-xs">
+              Building premium residential and commercial projects in Bhubaneswar. 
+              We focus on quality, timely delivery, and creating spaces that enhance lifestyles.
             </p>
 
-            {/* Download Buttons */}
-            <div className="flex gap-4 mt-6">
-              <button className="border border-[#D9D7CC] px-4 py-2 text-sm rounded">
-                DOWNLOAD FOR
+            <div className="flex gap-3 mt-4">
+              <button className="border border-[#D9D7CC] px-3 py-2 text-sm rounded">
+                DOWNLOAD BROCHURE
               </button>
-              <button className="border border-[#D9D7CC] px-4 py-2 text-sm rounded">
-                DOWNLOAD FOR
+              <button className="border border-[#D9D7CC] px-3 py-2 text-sm rounded">
+                VIEW PROJECTS
               </button>
             </div>
           </div>
 
           {/* CENTER – Subscription */}
-          <div>
-            <h3 className="text-xl font-semibold text-white">Fear Of Missing Out?</h3>
-            <p className="text-sm text-[#EDE9DE]">Get Latest Deals & Updates</p>
+<div>
+  <h3 className="text-base font-semibold text-white tracking-wide">
+    Stay Updated
+  </h3>
+  <p className="text-xs text-[#E6E2D4] mt-1 leading-snug">
+    Project launches & exclusive offers
+  </p>
 
-            <div className="flex mt-6">
-              <input
-                type="email"
-                placeholder="Email Id"
-                className="px-3 py-2 rounded-l-md bg-white text-black w-full outline-none"
-              />
-              <button className="bg-[#A1866F] text-white px-5 rounded-r-md text-xs tracking-wider">
-                SUBSCRIBE NOW
-              </button>
-            </div>
-          </div>
+  <form className="mt-4 space-y-2">
+    {/* Row 1 */}
+    <div className="flex gap-2">
+      <input
+        type="text"
+        placeholder="Name"
+        className="w-1/2 px-3 py-1.5 text-xs rounded-md bg-white/95 text-black
+                   outline-none placeholder:text-gray-500
+                   focus:ring-1 focus:ring-[#A1866F]"
+      />
+      <input
+        type="tel"
+        placeholder="Phone"
+        className="w-1/2 px-3 py-1.5 text-xs rounded-md bg-white/95 text-black
+                   outline-none placeholder:text-gray-500
+                   focus:ring-1 focus:ring-[#A1866F]"
+      />
+    </div>
+
+    {/* Email */}
+    <input
+      type="email"
+      placeholder="Email Address"
+      className="w-full px-3 py-1.5 text-xs rounded-md bg-white/95 text-black
+                 outline-none placeholder:text-gray-500
+                 focus:ring-1 focus:ring-[#A1866F]"
+    />
+
+    {/* Message */}
+    <textarea
+      rows="2"
+      placeholder="Message"
+      className="w-full px-3 py-1.5 text-xs rounded-md bg-white/95 text-black
+                 outline-none placeholder:text-gray-500 resize-none
+                 focus:ring-1 focus:ring-[#A1866F]"
+    ></textarea>
+
+    {/* Button */}
+    <button
+      type="submit"
+      className="w-full mt-1 bg-gradient-to-r from-[#A1866F] to-[#8E755F]
+                 text-white py-1.5 rounded-md text-[11px] tracking-widest
+                 transition-all duration-300 hover:opacity-90 hover:shadow-md"
+    >
+      SEND MESSAGE
+    </button>
+  </form>
+</div>
+
 
           {/* RIGHT – Contact */}
-          <div className="flex flex-col gap-6 mt-4 md:mt-0">
-
-            <div className="flex items-start gap-3">
-              <FiMapPin size={20} className="text-white" />
-              <p className="text-sm max-w-xs">47 W 13th St, New York, NY 10011</p>
+          <div className="flex flex-col gap-3 mt-4 md:mt-0">
+            <div className="flex items-start gap-2">
+              <FiMapPin size={18} className="text-white mt-1" />
+              <p className="text-sm max-w-xs">Plot No. 12, Khandagiri, Bhubaneswar, Odisha, 751030</p>
             </div>
-
-            <div className="flex items-start gap-3">
-              <FiMail size={20} className="text-white" />
-              <p className="text-sm">General@InteriorDesign.com</p>
+            <div className="flex items-start gap-2">
+              <FiMail size={18} className="text-white mt-1" />
+              <p className="text-sm">info@gracehomes.com</p>
             </div>
-
-            <div className="flex items-start gap-3">
-              <FiPhone size={20} className="text-white" />
-              <p className="text-sm">+05 - 845 4545 3434</p>
+            <div className="flex items-start gap-2">
+              <FiPhone size={18} className="text-white mt-1" />
+              <p className="text-sm">+91 8280 667 778</p>
             </div>
-
           </div>
-
         </div>
 
         {/* SEPARATOR */}
-        <div className="border-t border-[#49493A] mt-12 mb-10"></div>
+        <div className="border-t border-[#49493A] mt-8 mb-6"></div>
 
-        {/* 5 COLUMN NAV BLOCK */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 px-6">
-
+        {/* NAV BLOCK */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 text-sm">
           <div>
-            <h3 className="font-semibold text-white mb-3">Service’s</h3>
-            <ul className="text-sm space-y-1 text-[#EDE9DE]">
-              <li>Interior Design Services</li>
-              <li>Full Home Interiors</li>
-              <li>Customer Reviews</li>
-              <li>Service Available In Cities</li>
-              <li>Interior Budget Calculator</li>
-              <li>Home Interior Makeover</li>
+            <h3 className="font-semibold text-white mb-2">Our Services</h3>
+            <ul className="space-y-1 text-[#EDE9DE]">
+              <li>Residential Projects</li>
+              <li>Commercial Developments</li>
+              <li>Luxury Villas</li>
+              <li>High-Rise Apartments</li>
+              <li>Project Consultation</li>
+              <li>Interior Solutions</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-white mb-3">Help</h3>
-            <ul className="text-sm space-y-1 text-[#EDE9DE]">
+            <h3 className="font-semibold text-white mb-2">Help & Support</h3>
+            <ul className="space-y-1 text-[#EDE9DE]">
               <li>Privacy Policy</li>
-              <li>Shipping & Return Policy</li>
-              <li>Warranty Policy</li>
               <li>Terms & Conditions</li>
+              <li>Warranty Policy</li>
               <li>FAQs</li>
-              <li>Contact Us</li>
+              <li>Contact Support</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-white mb-3">Available Cities</h3>
-            <p className="text-sm text-[#EDE9DE]">New York | Miami | Los Angeles</p>
+            <h3 className="font-semibold text-white mb-2">Locations</h3>
+            <p className="text-[#EDE9DE]">Bhubaneswar | Cuttack | Puri</p>
           </div>
 
           <div className="col-span-2">
-            <h3 className="font-semibold text-white mb-3">Popular Categories</h3>
-            <p className="text-sm text-[#EDE9DE] leading-relaxed">
-              Hybrid Mattress | Pocket Springs | Mattress For Back Pain | High Foam Mattress | 
-              Memory Foam Mattress | Bed In Box Mattress | TV & Media Units
+            <h3 className="font-semibold text-white mb-2">Popular Projects</h3>
+            <p className="text-[#EDE9DE] leading-relaxed">
+              Grace Villas | Urban Heights Apartments | Prime Commercial Complex | Serenity Residency | Smart Homes Bhubaneswar
             </p>
           </div>
-
         </div>
 
         {/* BOTTOM STRIP */}
-        <div className="border-t border-[#4A4A3C] mt-14"></div>
+        <div className="border-t border-[#4A4A3C] mt-6"></div>
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 mt-6 text-sm text-[#EDE9DE]">
-          <span>© 2025 GraceHomes.Com All Rights Reserved</span>
+        <div className="flex flex-col md:flex-row justify-between items-center mt-4 text-sm text-[#EDE9DE] gap-3 md:gap-0">
+          <span>© 2025 GraceHomes.Bhubaneswar All Rights Reserved</span>
 
-          <div className="flex gap-5 mt-4 md:mt-0">
-            <FaFacebookF className="cursor-pointer hover:text-white" />
-            <FaTwitter className="cursor-pointer hover:text-white" />
-            <FaInstagram className="cursor-pointer hover:text-white" />
-            <FaLinkedinIn className="cursor-pointer hover:text-white" />
+          <div className="flex gap-4">
+            <a
+              href="https://www.facebook.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transition hover:text-[#F3732A]  "
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://twitter.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transition hover:text-[#F3732A]  "
+            >
+              <FaTwitter />
+            </a>
+
+            <a
+              href="https://www.instagram.com/gracehomesodisha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transition hover:text-[#F3732A]  
+           hover:-translate-y-1"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transition hover:text-[#F3732A] 
+           hover:-translate-y-1"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
 

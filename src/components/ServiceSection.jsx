@@ -1,5 +1,12 @@
 import React from "react";
-import { FaCouch, FaDraftingCompass, FaRegObjectGroup, FaLayerGroup, FaPalette, FaChair } from "react-icons/fa";
+import {
+  FaCouch,
+  FaDraftingCompass,
+  FaRegObjectGroup,
+  FaLayerGroup,
+  FaPalette,
+  FaChair,
+} from "react-icons/fa";
 
 const iconSet = [
   FaCouch,
@@ -12,49 +19,49 @@ const iconSet = [
 
 const services = [
   {
-    title: "Personalized Living Interior",
+    title: "Residential Project Development",
     description:
-      "Modern minimalist interior design featuring elegant organic shapes harmonizing comfort with style in neutral tones.",
+      "We build thoughtfully planned residential spaces designed for comfort, safety, and long-term value, blending modern architecture with everyday practicality.",
     features: [
-      "Space Blueprint",
-      "Fabric & Tile Options",
-      "Circulation Mapping",
-      "Wall Finishes",
-      "User-Centric Layout",
-      "Furniture Positioning",
+      "Master Planning",
+      "Floor Plan Design",
+      "Quality Construction Materials",
+      "Vastu-Compliant Layouts",
+      "Efficient Space Utilization",
+      "Premium Finish Standards",
     ],
     image:
-      "https://img.freepik.com/free-photo/living-room-mid-century-style-with-warm-colors-ai-generative_123827-23930.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+      "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/pkedx0r_1740478935_572585669_optOrig.jpg",
   },
   {
-    title: "Professional Interior Solution",
+    title: "Commercial & Mixed-Use Projects",
     description:
-      "Expert interior solutions combining style, function, and innovation to create truly elegant, practical, and welcoming spaces.",
+      "High-performance commercial developments crafted to support business growth, offering smart layouts, modern infrastructure, and excellent connectivity.",
     features: [
-      "Floor Layout Plan",
-      "Material & Texture Samples",
-      "Smooth Flow Paths",
-      "Color & Wallpaper Selection",
-      "Functional Zoning",
-      "Furniture Scaling",
+      "Site Analysis & Planning",
+      "Structural Design",
+      "Optimized Floor Plates",
+      "Smart Utility Integration",
+      "High Footfall Planning",
+      "Future-Ready Infrastructure",
     ],
     image:
-      "https://img.freepik.com/premium-photo/hand-drawn-kitchen-interior_670147-41754.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+      "https://img.freepik.com/free-photo/cafe-living-room-loft-style_1150-10725.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
-    title: "Luxury & High-End Design",
+    title: "Luxury & Landmark Developments",
     description:
-      "Opulent interiors with bespoke finishes and refined design, offering sophistication and timeless elegance.",
+      "Iconic developments built with premium materials, refined detailing, and superior craftsmanship to create timeless landmarks and aspirational living spaces.",
     features: [
-      "Room Planning",
-      "Surface Finishing Options",
-      "Space Navigation",
-      "Paint & Texture Samples",
-      "Daily Use Focus",
-      "Stylish Layout Setup",
+      "Signature Architectural Design",
+      "High-End Material Selection",
+      "Exclusive Amenities Planning",
+      "Sustainable Building Practices",
+      "Detail-Oriented Execution",
+      "Long-Term Asset Value",
     ],
     image:
-      "https://img.freepik.com/premium-photo/serene-minimalist-asian-livingroom-clean-lines_882186-40745.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+      "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/z0qeysg_1740478935_572585663_optOrig.jpg",
   },
 ];
 
@@ -66,11 +73,12 @@ export default function ServiceSection() {
         {/* Heading */}
         <div className="text-center">
           <p className="text-sm tracking-widest uppercase text-[#a38d7b] mb-2">
-            Curated For You
+            What We Build
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-            Browse <span className="text-[#a38d7b]">Elegant Creations</span> For Every Room
+          <h2 className="fade-right text-3xl md:text-4xl lg:text-5xl font-semibold">
+            Building <span className="text-[#a38d7b]">Quality That Lasts</span>
           </h2>
+
         </div>
 
         {/* Services */}
@@ -82,7 +90,7 @@ export default function ServiceSection() {
             }`}
           >
             {/* Text */}
-            <div className="lg:w-1/2 w-full">
+            <div className="fade-left lg:w-1/2 w-full">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
                 {service.title}
               </h3>
@@ -102,12 +110,12 @@ export default function ServiceSection() {
               </div>
 
               <button className="flip-btn bg-[#3b3a2f] hover:bg-[#4a493c] text-white px-6 py-3 rounded-none tracking-wide transition-all duration-300">
-                Learn More
+                View Projects
               </button>
             </div>
 
             {/* Image */}
-            <div className="lg:w-1/2 w-full">
+            <div className="fade-left lg:w-1/2 w-full">
               <img
                 src={service.image}
                 alt={service.title}

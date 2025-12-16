@@ -4,19 +4,19 @@ import { FaCommentAlt } from "react-icons/fa";
 const testimonials = [
   {
     id: 1,
-    name: "Paul Frank V.",
-    location: "California",
-    role: "Business Manager",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    text: "We wanted a cozy yet elegant space, and [Your Company] delivered perfectly. Their design choices enhanced our lifestyle beautifully. Every room now feels like home.",
+    name: "Rajiv Mehta",
+    location: "Bhubaneswar",
+    role: "Homeowner",
+    avatar: "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    text: "Choosing Grace Homes was the best decision we made. From planning to possession, the entire process was transparent and professional. The quality of construction truly stands out.",
   },
   {
     id: 2,
-    name: "Kristen Silva K.",
-    location: "Texas",
-    role: "Owner",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    text: "It feels like a dream to walk into our house these days. Every element was meticulously planned and perfectly executed. Hard to imagine living without our stress-free, chic Crew.",
+    name: "Anita Sharma",
+    location: "Cuttack",
+    role: "Property Investor",
+    avatar: "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    text: "Their projects are well-planned, future-ready, and located in prime areas. I invested with complete confidence and the returns have exceeded expectations.",
   },
 ];
 
@@ -36,22 +36,24 @@ export default function TestimonialsSection() {
         <div className="flex flex-col lg:flex-row items-start gap-16">
           
           {/* Left Text Section */}
-          <div className="lg:w-1/3">
-            <p className="text-sm text-gray-700 uppercase mb-3">Loves from our clients</p>
+          <div className="fade-right lg:w-1/3">
+            <p className="text-sm text-gray-700 uppercase mb-3">
+              Trusted by Homebuyers & Investors
+            </p>
             <h2 className="text-3xl md:text-4xl font-semibold text-black mb-5">
-              User Experience <br /> We Style it!
+              Experiences That <br /> Build Trust
             </h2>
             <p className="text-gray-700 mb-8">
-              The interior design team transformed my home beyond expectations. Every detail
-              reflects elegance, functionality, and a perfect balance of style and comfort.
+              Our clients value our commitment to quality, transparency, and timely delivery.
+              Every project is built with precision, care, and a focus on long-term value.
             </p>
             <button className="flip-btn bg-[#8B5E3C] text-white px-6 py-3 rounded hover:bg-[#7a4f2f] transition">
-              View All Testimonials
+              View All Reviews
             </button>
           </div>
 
           {/* Right Testimonials Section */}
-          <div className="lg:w-2/3 flex flex-col gap-10">
+          <div className="fade-up lg:w-2/3 flex flex-col gap-10">
             {testimonials.map((t) => (
               <div key={t.id} className="flex gap-6 items-start">
                 

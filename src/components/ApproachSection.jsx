@@ -3,27 +3,27 @@ import React from "react";
 const steps = [
   {
     id: 1,
-    title: "Design Session",
-    desc: "It ensures your vision is turned into a practical, stylish design",
-    img: "https://img.freepik.com/free-photo/design-floor-plan-software-concept_53876-122984.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Requirement Discussion",
+    desc: "We understand your property requirements, budget, preferred location, and long-term investment goals.",
+    img: "https://img.freepik.com/premium-photo/realistic-photograph-blonde-australian-couple-sitting-together-generative-ai_804788-234651.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
-    title: "Talent Review",
-    desc: "Talent Review aligns skills with the right roles and goals",
-    img: "https://img.freepik.com/free-photo/front-view-smiley-man-holding-paper_23-2150171318.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Project Planning & Approvals",
+    desc: "Our experts handle planning, design layouts, approvals, and timelines to ensure smooth execution.",
+    img: "https://img.freepik.com/free-photo/team-architects-working-town-project-conference-room-architect-business-suit_482257-26513.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 3,
-    title: "Creative Meeting",
-    desc: "Focused on sparking creativity and turning ideas into results",
-    img: "https://img.freepik.com/free-photo/young-coworkers-discussing-work-subject_23-2147668781.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Construction Execution",
+    desc: "We follow strict quality standards, safety norms, and transparent processes during construction.",
+    img: "https://img.freepik.com/free-photo/low-angle-people-looking-building-scaffolding_23-2148269328.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 4,
-    title: "Interior Render",
-    desc: "Interior Renders show spaces before execution, design precision",
-    img: "https://img.freepik.com/free-photo/3d-rendering-luxury-modern-living-room-with-leather-sofa-lamp-wood-decor-loft-style_105762-2259.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Project Delivery & Handover",
+    desc: "Timely project completion with RERA compliance, documentation, and customer satisfaction.",
+    img: "https://img.freepik.com/free-photo/male-real-estate-agent-doing-business-showing-house-potential-buying-couple_23-2150164721.jpg?t=st=1765780186~exp=1765783786~hmac=1d43b2a11fc3ce6635bd2d8efea5806c6d31d75181b04070964775c9df6f53ba",
   },
 ];
 
@@ -33,31 +33,37 @@ const ApproachSection = () => {
       {/* Heading */}
       <div className="text-center mb-16">
         <p className="text-sm uppercase text-gray-400 tracking-widest mb-2">
-          Define Process
+          Our Work Process
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold">
-          Approach To{" "}
-          <span className="text-[#c8a97e]">Connect With Expert</span>
+        <h2 className="fade-right text-3xl sm:text-4xl font-bold">
+          Our Approach To{" "}
+          <span className="text-[#c8a97e]">Building Excellence</span>
         </h2>
       </div>
 
       {/* Step Cards */}
-      <div className="flex flex-col md:flex-row justify-center items-start gap-8 relative">
+      <div className="fade-up flex flex-col md:flex-row justify-center items-start gap-8 relative">
         {steps.map((step, index) => (
           <div
             key={step.id}
-            className={`bg-white text-gray-900 p-6 shadow-lg w-full md:w-60 flex flex-col items-start ${
+            className={`relative bg-white text-gray-900 p-6 shadow-lg w-full md:w-60 flex flex-col items-start overflow-hidden group ${
               index % 2 !== 0 ? "md:mt-8" : ""
             }`}
           >
-            <div className="text-2xl font-bold mb-2">{`0${step.id}`}</div>
-            <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-            <p className="text-sm mb-4">{step.desc}</p>
-            <img
-              src={step.img}
-              alt={step.title}
-              className="w-full h-32 object-cover rounded"
-            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-[#c8a97e]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+
+            {/* Card Content */}
+            <div className="relative z-20 flex flex-col w-full">
+              <div className="text-2xl font-bold mb-2">{`0${step.id}`}</div>
+              <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
+              <p className="text-sm mb-4">{step.desc}</p>
+              <img
+                src={step.img}
+                alt={step.title}
+                className="w-full h-32 object-cover rounded"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -72,10 +78,10 @@ const ApproachSection = () => {
         </button>
       </div>
 
-      {/* Appointment Button */}
+      {/* CTA Button */}
       <div className="mt-12 text-center">
         <button className="flip-btn bg-[#c8a97e] text-gray-900 font-semibold px-6 py-3 hover:bg-[#b4946d] transition">
-          Make an Appointment
+          Book a Site Visit
         </button>
       </div>
     </section>

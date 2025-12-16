@@ -79,7 +79,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #4b5563; /* gray-600 after flip */
+  background-color: #3b3a2f;
   transform: rotateX(180deg);
   transform-origin: center;
   backface-visibility: hidden;
@@ -122,8 +122,8 @@
   left: 0;
   width: 40px;
   height: 40px;
-  background: rgba(0, 123, 156, 0.4);
-  border: 2px solid #007B9C;
+  background: #4b4b49;
+  border: 2px solid #c39577;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -131,19 +131,6 @@
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-/* Trailing circles */
-.cursor-trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background: rgba(0, 123, 156, 0.2);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  filter: blur(6px);
-}
 
 /* Hover effect: enlarge cursor on interactive elements */
 button:hover ~ .cursor-circle,

@@ -35,15 +35,39 @@ export default function Navbar() {
             </span>
 
             <span className="flex items-center gap-2">
-              <i className="fas fa-phone-alt"></i> +05 - 843 4545 3434
+              <i className="fas fa-phone-alt"></i> +91 8280 667 778
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-lg">
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-x-twitter"></i>
-            <i className="fab fa-instagram"></i>
-          </div>
+         <div className="flex items-center gap-4 text-lg">
+  <a
+    href="https://www.facebook.com/yourpage"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#F3732A] transition"
+  >
+    <i className="fab fa-facebook"></i>
+  </a>
+
+  <a
+    href="https://twitter.com/yourprofile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#F3732A] transition"
+  >
+    <i className="fab fa-x-twitter"></i>
+  </a>
+
+  <a
+    href="https://www.instagram.com/gracehomesodisha"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#F3732A] transition"
+  >
+    <i className="fab fa-instagram"></i>
+  </a>
+</div>
+
         </div>
 
         {/* MAIN NAVBAR */}
@@ -52,11 +76,17 @@ export default function Navbar() {
             scroll ? "text-black" : "text-white"
           }`}
         >
-          {/* Left - Logo */}
-          <div className="flex items-center gap-3">
-            <img src="/assets/images/logo/grace_homes_alpha-01.png" alt="" className="w-20" />
-            
-          </div>
+      <div className="flex items-center gap-3">
+        <img
+          src={
+            scroll
+              ? "/assets/images/logo/grace_homes_alpha-01.png" // SCROLL LOGO
+              : "/assets/images/logo/grace_homes_alpha-02.png" // DEFAULT LOGO
+          }
+          alt="Grace Homes"
+          className="w-20 transition-all duration-300"
+        />
+      </div>
 
           {/* Right Section */}
           <div className="flex items-center gap-5">
