@@ -31,7 +31,7 @@ export default function Navbar() {
         >
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
-              <i className="far fa-envelope"></i> General@interiorDesign.com
+              <i className="far fa-envelope"></i> info@gracehomes.com
             </span>
 
             <span className="flex items-center gap-2">
