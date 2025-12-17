@@ -31,7 +31,7 @@ export default function Navbar() {
         >
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
-              <i className="far fa-envelope"></i> info@gracehomes.com
+              <i className="far fa-envelope"></i> sgraceengineering@gmail.com
             </span>
 
             <span className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function Navbar() {
 
          <div className="flex items-center gap-4 text-lg">
   <a
-    href="https://www.facebook.com/yourpage"
+    href="https://www.facebook.com/"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-[#F3732A] transition"
@@ -50,7 +50,7 @@ export default function Navbar() {
   </a>
 
   <a
-    href="https://twitter.com/yourprofile"
+    href="https://twitter.com/"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-[#F3732A] transition"

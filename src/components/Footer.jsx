@@ -109,7 +109,7 @@ export default function Footer() {
             </div>
             <div className="flex items-start gap-2">
               <FiMail size={18} className="text-white mt-1" />
-              <p className="text-sm">info@gracehomes.com</p>
+              <p className="text-sm">sgraceengineering@gmail.com</p>
             </div>
             <div className="flex items-start gap-2">
               <FiPhone size={18} className="text-white mt-1" />
@@ -167,7 +167,7 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/yourpage"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer transition hover:text-[#F3732A]  "
@@ -176,7 +176,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://twitter.com/yourprofile"
+              href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer transition hover:text-[#F3732A]  "
@@ -195,7 +195,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer transition hover:text-[#F3732A] 
