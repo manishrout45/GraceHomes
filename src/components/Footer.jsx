@@ -108,13 +108,25 @@ export default function Footer() {
               <p className="text-sm max-w-xs">Plot No. 12, Khandagiri, Bhubaneswar, Odisha, 751030</p>
             </div>
             <div className="flex items-start gap-2">
-              <FiMail size={18} className="text-white mt-1" />
-              <p className="text-sm">sgraceengineering@gmail.com</p>
-            </div>
-            <div className="flex items-start gap-2">
-              <FiPhone size={18} className="text-white mt-1" />
-              <p className="text-sm">+91 8280 667 778</p>
-            </div>
+            <FiMail size={18} className="text-white mt-1" />
+            <a
+              href="mailto:sgraceengineering@gmail.com"
+              className="text-sm hover:underline"
+            >
+              sgraceengineering@gmail.com
+            </a>
+          </div>
+
+          <div className="flex items-start gap-2">
+            <FiPhone size={18} className="text-white mt-1" />
+            <a
+              href="tel:+918280667778"
+              className="text-sm hover:underline"
+            >
+              +91 8280 667 778
+            </a>
+          </div>
+
           </div>
         </div>
 
@@ -170,7 +182,8 @@ export default function Footer() {
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer transition hover:text-[#F3732A]  "
+              className="cursor-pointer transition hover:text-[#F3732A]  
+              hover:-translate-y-1"
             >
               <FaFacebookF />
             </a>
@@ -179,7 +192,8 @@ export default function Footer() {
               href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer transition hover:text-[#F3732A]  "
+              className="cursor-pointer transition hover:text-[#F3732A]  
+              hover:-translate-y-1"
             >
               <FaTwitter />
             </a>
