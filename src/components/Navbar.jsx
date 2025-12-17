@@ -53,7 +53,7 @@ export default function Navbar() {
             {/* RIGHT */}
             <div className="flex items-center gap-4 text-lg">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/gracehomesodisha"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#F3732A] transition"

@@ -179,7 +179,7 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/gracehomesodisha"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer transition hover:text-[#F3732A]  
