@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ScrollPromo = () => {
   useEffect(() => {
@@ -54,13 +55,13 @@ const ScrollPromo = () => {
             quality, and long-term value. Discover thoughtfully planned homes built with
             trust, innovation, and excellence.
           </p>
-
+        <Link to="/services">
           <button
             className="flip-btn mask-btn mt-4 sm:mt-6 bg-white text-gray-900 font-semibold 
                        px-4 sm:px-6 py-2 sm:py-3 shadow-sm hover:bg-gray-200 transition rounded-lg"
           >
             EXPLORE OUR PROJECTS
-          </button>
+          </button></Link>
 
         </div>
       </div>

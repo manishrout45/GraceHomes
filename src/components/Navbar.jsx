@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
@@ -114,13 +115,15 @@ export default function Navbar() {
               </button>
 
               {/* CTA Button */}
-              <button
-                className={`flip-btn hidden md:block px-6 py-3 font-medium tracking-wide transition-all duration-300 ${
-                  scroll ? "bg-black text-white" : "bg-white text-black"
-                }`}
-              >
-                GET FREE ESTIMATION
-              </button>
+              <Link to="/contact">
+                <button
+                  className={`flip-btn hidden md:block px-6 py-3 font-medium tracking-wide transition-all duration-300 ${
+                    scroll ? "bg-black text-white" : "bg-white text-black"
+                  }`}
+                >
+                  GET FREE ESTIMATION
+                </button>
+              </Link>
 
               {/* Hamburger */}
               <button
@@ -155,25 +158,33 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Menu Items */}
         <nav className="flex flex-col gap-6 px-6 text-lg font-medium">
-          {[
-            "Home",
-            "Our Services",
-            "Projects",
-            "Articles",
-            "Contact",
-            "Products",
-            "Pages",
-          ].map((item) => (
-            <button
-              key={item}
-              className="flex items-center justify-between py-3 border-b"
-            >
-              {item} <span>›</span>
-            </button>
-          ))}
-        </nav>
+  {[
+    { name: "Home", path: "/" },
+    { name: "Our Services", path: "/services" },
+    { name: "Articles", path: "/articles" },
+    { name: "Testimonials", path: "/testimonials" },
+    { name: "Contact", path: "/contact" },
+  ].map((item) => (
+    <NavLink
+      key={item.name}
+      to={item.path}
+      onClick={() => setOpen(false)} // close menu on click
+      className={({ isActive }) =>
+        `flex items-center justify-between py-3 border-b transition
+         ${
+           isActive
+             ? "text-orange-600 font-semibold"
+             : "hover:text-orange-600"
+         }`
+      }
+    >
+      {item.name}
+      <span>›</span>
+    </NavLink>
+  ))}
+</nav>
+
       </div>
     </>
   );

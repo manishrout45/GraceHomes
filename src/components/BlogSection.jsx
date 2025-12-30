@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegComment } from "react-icons/fa";
 
 const blogPosts = [
@@ -32,6 +32,27 @@ const blogPosts = [
 ];
 
 export default function BlogSection() {
+  useEffect(() => {
+    const fadeElements = document.querySelectorAll(".fade-up, .fade-right");
+
+    const handleFade = () => {
+      fadeElements.forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          // add in-view class with stagger delay
+          setTimeout(() => el.classList.add("in-view"), index * 150);
+        }
+      });
+    };
+
+    // Run once on load (for elements already in view)
+    handleFade();
+
+    // Run on scroll
+    window.addEventListener("scroll", handleFade);
+    return () => window.removeEventListener("scroll", handleFade);
+  }, []);
+
   return (
     <section className="w-full bg-[#fdf6ee] py-16">
       <div className="max-w-7xl mx-auto px-4">
@@ -49,11 +70,12 @@ export default function BlogSection() {
         </div>
 
         {/* Blog Cards */}
-        <div className="fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post, index) => (
             <div
               key={post.id}
-              className="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition hover:-translate-y-1 duration-300"
+              className="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition hover:-translate-y-1 duration-300 fade-up"
+              style={{ transitionDelay: `${index * 0.2}s` }}
             >
               <img
                 src={post.img}

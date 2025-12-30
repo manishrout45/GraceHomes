@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaCouch,
   FaDraftingCompass,
@@ -66,6 +66,26 @@ const services = [
 ];
 
 export default function ServiceSection() {
+  useEffect(() => {
+    const fadeElements = document.querySelectorAll(".fade-up, .fade-left, .fade-right");
+
+    const handleFade = () => {
+      fadeElements.forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          setTimeout(() => el.classList.add("in-view"), index * 150);
+        }
+      });
+    };
+
+    // Trigger animations on page load for elements already in view
+    handleFade();
+
+    // Trigger animations on scroll
+    window.addEventListener("scroll", handleFade);
+    return () => window.removeEventListener("scroll", handleFade);
+  }, []);
+
   return (
     <section className="w-full py-16 bg-[#2a2a1f] text-white">
       <div className="max-w-7xl mx-auto px-4 space-y-20">
@@ -78,7 +98,6 @@ export default function ServiceSection() {
           <h2 className="fade-right text-3xl md:text-4xl lg:text-5xl font-semibold">
             Building <span className="text-[#a38d7b]">Quality That Lasts</span>
           </h2>
-
         </div>
 
         {/* Services */}
@@ -119,7 +138,7 @@ export default function ServiceSection() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-md"
               />
             </div>
           </div>

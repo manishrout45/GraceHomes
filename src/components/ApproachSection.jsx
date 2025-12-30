@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const steps = [
   {
     id: 1,
@@ -80,9 +80,10 @@ const ApproachSection = () => {
 
       {/* CTA Button */}
       <div className="mt-12 text-center">
+        <Link to="/contact">
         <button className="flip-btn bg-[#c8a97e] text-gray-900 font-semibold px-6 py-3 hover:bg-[#b4946d] transition">
           Book a Site Visit
-        </button>
+        </button></Link>
       </div>
     </section>
   );

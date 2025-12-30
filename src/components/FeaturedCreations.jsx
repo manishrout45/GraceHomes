@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const galleryData = [
   {
-    title: "Luxury Villa Project",
-    price: "₹85 Lakhs Onwards",
-    img: "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/pkedx0r_1740478935_572585669_optOrig.jpg",
+    title: "Premium Residential Project",
+    stage: "Foundation & Column Work",
+    img: "/assets/images/GH-1.jpeg",
   },
   {
-    title: "Smart Home Layout",
-    price: "₹65 Lakhs Onwards",
-    img: "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/imeunao_1740478935_572585673_optOrig.jpg",
+    title: "Premium Residential Project",
+    stage: "Under Construction",
+    img: "/assets/images/GH-2.jpeg",
   },
   {
-    title: "Premium Living Space",
-    price: "₹1.2 Cr Onwards",
-    img: "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/9pmnubt_1740732970_573448983_optOrig.jpg",
+    title: "Premium Residential Project",
+    stage: "RCC Structure in Progress",
+    img: "/assets/images/GH-3.jpeg",
   },
   {
-    title: "Modern Apartment Bathroom",
-    price: "₹55 Lakhs Onwards",
-    img: "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/zqazalh_1740732970_573448985_optOrig.jpg",
+    title: "Premium Residential Project",
+    stage: "Site Development Phase",
+    img: "/assets/images/GH-4.jpeg",
   },
   {
     title: "Luxury Bathroom Concept",
@@ -71,7 +72,7 @@ export default function FeaturedCreations() {
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-500">
-                  Starting Price {item.price}
+                   {item.stage}
                 </p>
 
                 <button className="mt-4 text-xs tracking-wide underline text-gray-700 hover:text-black">
@@ -94,7 +95,7 @@ export default function FeaturedCreations() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-3 right-3 bg-white text-gray-700 px-2 py-[2px] text-xs rounded shadow">
-                  Ready to Move
+                  Ready Soon
                 </div>
               </div>
 
@@ -125,10 +126,10 @@ export default function FeaturedCreations() {
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center">
                 Let’s Build Your Dream Property
               </h2>
-
+              <Link to="/contact">
               <button className="flip-btn bg-white text-gray-700 px-6 py-2 text-sm rounded shadow hover:bg-gray-100">
                 CONTACT OUR SALES TEAM
-              </button>
+              </button></Link>
             </div>
           </div>
 
@@ -145,7 +146,7 @@ export default function FeaturedCreations() {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-3 right-3 bg-white text-gray-700 px-2 py-[2px] text-xs rounded shadow">
-                  New Launch
+                  Booking Open
                 </div>
               </div>
 

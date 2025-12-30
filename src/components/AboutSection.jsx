@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -100,12 +101,13 @@ export default function AboutSection() {
             </div>
 
             {/* Button */}
+            <Link to="/services">
             <button
               className="flip-btn bg-[#3b3a2f] text-white px-8 py-4 tracking-wide transition-all duration-300"
               style={{ borderRadius: 0 }}
             >
               EXPLORE OUR PROJECTS
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
