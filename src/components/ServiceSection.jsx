@@ -19,45 +19,45 @@ const iconSet = [
 
 const services = [
   {
-    title: "Residential Project Development",
+    title: "Residential Project Development in Khandagiri",
     description:
-      "We build thoughtfully planned residential spaces designed for comfort, safety, and long-term value, blending modern architecture with everyday practicality.",
+      "Building residential living spaces that ensure safety, comfort, and functionality, built with precision, delivered with care. Our residential apartments feature:",
     features: [
-      "Master Planning",
-      "Floor Plan Design",
+      "Proper Planning",
       "Quality Construction Materials",
-      "Vastu-Compliant Layouts",
-      "Efficient Space Utilization",
-      "Premium Finish Standards",
+      "Space management",
+      "Floor planning",
+      "Vastu Optimized",
+      "Premium Finishing",
     ],
     image:
       "https://newprojects.99acres.com/projects/sk_developers_bhubaneswar/sk_grace_urban_ville/images/pkedx0r_1740478935_572585669_optOrig.jpg",
   },
   {
-    title: "Commercial & Mixed-Use Projects",
+    title: "Commercial and Mixed-Use Project Development in Khandagiri",
     description:
-      "High-performance commercial developments crafted to support business growth, offering smart layouts, modern infrastructure, and excellent connectivity.",
+      "Our design team understands the efficacy and usage of commercial and mixed-use buildings, and plans the layout with:",
     features: [
-      "Site Analysis & Planning",
-      "Structural Design",
-      "Optimized Floor Plates",
-      "Smart Utility Integration",
+      "Site Analysis",
+      "Structural Planning",
       "High Footfall Planning",
-      "Future-Ready Infrastructure",
+      "Floor Plating",
+      "Smart Functionality",
+      "Future-Ready infrastructure",
     ],
     image:
       "https://img.freepik.com/free-photo/cafe-living-room-loft-style_1150-10725.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
-    title: "Luxury & Landmark Developments",
+    title: "Luxury and Landmark Developments in Khandagiri",
     description:
-      "Iconic developments built with premium materials, refined detailing, and superior craftsmanship to create timeless landmarks and aspirational living spaces.",
+      "Our architects plan to ensure luxury living, fulfill client satisfaction, create iconic landmarks, and provide aspirational living spaces. Here’s a glimpse of how our luxury apartments feature:",
     features: [
-      "Signature Architectural Design",
-      "High-End Material Selection",
-      "Exclusive Amenities Planning",
-      "Sustainable Building Practices",
-      "Detail-Oriented Execution",
+      "Modern Architectural Design",
+      "High-end Building Materials",
+      "Great Amenities",
+      "Refined Detailing",
+      "Compliance with Building Standards",
       "Long-Term Asset Value",
     ],
     image:
@@ -96,7 +96,7 @@ export default function ServiceSection() {
             What We Build
           </p>
           <h2 className="fade-right text-3xl md:text-4xl lg:text-5xl font-semibold">
-            Building <span className="text-[#a38d7b]">Quality That Lasts</span>
+            Building the Future of <span className="text-[#a38d7b]">Modern Living in Bhubaneswar</span>
           </h2>
         </div>
 

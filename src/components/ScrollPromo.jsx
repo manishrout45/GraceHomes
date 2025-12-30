@@ -47,13 +47,14 @@ const ScrollPromo = () => {
         <div id="scrollText" className="space-y-4 sm:space-y-6 text-center px-4">
 
           <h2 className="fade-right main-heading text-white text-3xl sm:text-5xl font-bold leading-snug sm:leading-tight">
-            Building Landmarks <br /> That Define Modern Living
+            Building Landmarks  <br /> That Define Modern Living in Odisha
           </h2>
 
           <p className="fade-up text-white text-sm sm:text-lg font-semibold tracking-wide max-w-2xl mx-auto">
-            We develop premium residential and commercial spaces designed for comfort,
-            quality, and long-term value. Discover thoughtfully planned homes built with
-            trust, innovation, and excellence.
+            We develop premium residential and commercial spaces in Bhubaneswar, designed for
+comfort, built with trust, innovation, and excellence. Explore our projects that seamlessly
+blend modernity, functionality, and luxury living.
+
           </p>
         <Link to="/services">
           <button

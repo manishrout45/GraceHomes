@@ -4,25 +4,25 @@ const steps = [
   {
     id: 1,
     title: "Requirement Discussion",
-    desc: "We understand your property requirements, budget, preferred location, and long-term investment goals.",
+    desc: "Our requirement consultation includes the client's needs,budget, investment goals, and result expectations.",
     img: "https://img.freepik.com/premium-photo/realistic-photograph-blonde-australian-couple-sitting-together-generative-ai_804788-234651.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
-    title: "Project Planning & Approvals",
-    desc: "Our experts handle planning, design layouts, approvals, and timelines to ensure smooth execution.",
+    title: "Project Planning and Approvals",
+    desc: "Planning design layouts, project approval, safety certification, and delivery timeline to ensure smooth working.",
     img: "https://img.freepik.com/free-photo/team-architects-working-town-project-conference-room-architect-business-suit_482257-26513.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 3,
     title: "Construction Execution",
-    desc: "We follow strict quality standards, safety norms, and transparent processes during construction.",
+    desc: "From material selection to safety norms, we ensure our construction work meets the highest quality standards.",
     img: "https://img.freepik.com/free-photo/low-angle-people-looking-building-scaffolding_23-2148269328.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 4,
-    title: "Project Delivery & Handover",
-    desc: "Timely project completion with RERA compliance, documentation, and customer satisfaction.",
+    title: "Project Delivery and Handover",
+    desc: "Final project delivery that ensures RERA compliance, required documentation, and ensures client satisfaction.",
     img: "https://img.freepik.com/free-photo/male-real-estate-agent-doing-business-showing-house-potential-buying-couple_23-2150164721.jpg?t=st=1765780186~exp=1765783786~hmac=1d43b2a11fc3ce6635bd2d8efea5806c6d31d75181b04070964775c9df6f53ba",
   },
 ];
@@ -36,8 +36,8 @@ const ApproachSection = () => {
           Our Work Process
         </p>
         <h2 className="fade-right text-3xl sm:text-4xl font-bold">
-          Our Approach To{" "}
-          <span className="text-[#c8a97e]">Building Excellence</span>
+          Our Work {" "}
+          <span className="text-[#c8a97e]">Procedure Includes</span>
         </h2>
       </div>
 

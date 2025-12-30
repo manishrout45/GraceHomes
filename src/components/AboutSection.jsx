@@ -16,13 +16,13 @@ export default function AboutSection() {
         {/* TOP TITLES */}
         <div className="text-center mb-12">
           <p className="text-[13px] tracking-[3px] uppercase text-[#e7dacd] font-medium mb-3">
-            Building Trust Since Years
+            Building Trust for Years
           </p>
 
-          <h2 className="fade-right text-3xl md:text-4xl lg:text-5xl font-light text-black leading-tight">
-            Shaping Spaces,{" "}
-            <span className="text-[#c39577] font-normal">
-              Building Futures
+          <h2 className="fade-right text-3xl md:text-4xl lg:text-5xl  text-black leading-tight font-semibold">
+            Crafting Thoughtful Designs,{" "}
+            <span className="text-[#c39577] ">
+              Modernising Living
             </span>
           </h2>
         </div>
@@ -55,7 +55,7 @@ export default function AboutSection() {
             {/* Experience Badge */}
             <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-md text-center shadow-md">
               <p className="text-4xl md:text-5xl font-semibold text-gray-800 leading-none">
-                25+
+                15+
               </p>
               <p className="text-lg font-medium text-gray-600 -mt-1">
                 Years Experience
@@ -66,14 +66,13 @@ export default function AboutSection() {
           {/* RIGHT TEXT */}
           <div>
             <h3 className="fade-up text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4">
-              Trusted Real Estate Builder & Developer
+              Trusted Real Estate Builder And Developer in Odisha
             </h3>
 
             <p className="fade-up text-gray-700 leading-relaxed mb-8 max-w-xl">
-              We are a leading real estate builder committed to delivering
-              premium residential and commercial projects. Our developments
-              focus on quality construction, thoughtful planning, and timely
-              delivery to create lasting value for homeowners and investors.
+              From planning to construction and final delivery, our commercial and residential project
+development in Bhubaneswar focuses on quality, functionality, and modern living, tailored to
+clients’ needs. For 15 years, our projects have been featured for;
             </p>
 
             {/* ICON LIST */}
@@ -81,21 +80,21 @@ export default function AboutSection() {
               <div className="flex items-center gap-3 text-gray-800">
                 <i className="far fa-building text-xl"></i>
                 <p className="text-[16px]">
-                  Landmark Residential & Commercial Projects
+                   High-End Commercial and Residential Apartments
                 </p>
               </div>
 
               <div className="flex items-center gap-3 text-gray-800">
                 <i className="fas fa-check-circle text-xl"></i>
                 <p className="text-[16px]">
-                  RERA Approved & Quality Assured
+                  RERA Approved and Quality Assured
                 </p>
               </div>
 
               <div className="flex items-center gap-3 text-gray-800">
                 <i className="fas fa-handshake text-xl"></i>
                 <p className="text-[16px]">
-                  Transparent Process & Timely Delivery
+                  Transparent Process and On-time Delivery
                 </p>
               </div>
             </div>
