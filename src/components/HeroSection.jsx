@@ -19,7 +19,7 @@ const slides = [
   },
   {
     id: 2,
-    title: "Commercial & Mixed-Use Projects",
+    title: "Top Commercial Project Development",
     subtitle: "Building for Growth",
     desc: "Strategically developed commercial and mixed-use spaces designed to support businesses and long-term investment value.",
     image:
@@ -28,7 +28,7 @@ const slides = [
 ];
 
 export default function HeroSection() {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(0); // default to Residential Projects
 
   return (
     <section
@@ -70,120 +70,112 @@ export default function HeroSection() {
         </p>
       </div>
 
-      {/* ---------------------------- */}
-      {/* Bottom Category Switcher     */}
-      {/* ---------------------------- */}
-        {/* Bottom Category Switcher */}
-        <div className="absolute bottom-0 left-0 w-full bg-[#3a3a28]/70 backdrop-blur-md text-white z-30">
+      {/* Bottom Category Switcher */}
+      <div className="absolute bottom-0 left-0 w-full bg-[#3a3a28]/70 backdrop-blur-md text-white z-30">
+        <div className="relative max-w-7xl mx-auto">
+          {/* LEFT ARROW (Mobile) */}
+          <button
+            onClick={() =>
+              document.getElementById("catScroll").scrollBy({
+                left: -200,
+                behavior: "smooth",
+              })
+            }
+            className="
+              md:hidden 
+              absolute left-0 top-1/2 -translate-y-1/2 
+              z-40 
+              bg-black/40 backdrop-blur-sm 
+              px-3 py-2 rounded-full 
+              text-white text-2xl 
+            "
+          >
+            ‹
+          </button>
 
-          {/* Wrapper (relative so arrows sit over buttons) */}
-          <div className="relative max-w-7xl mx-auto">
+          {/* RIGHT ARROW (Mobile) */}
+          <button
+            onClick={() =>
+              document.getElementById("catScroll").scrollBy({
+                left: 200,
+                behavior: "smooth",
+              })
+            }
+            className="
+              md:hidden 
+              absolute right-0 top-1/2 -translate-y-1/2 
+              z-40 
+              bg-black/40 backdrop-blur-sm 
+              px-3 py-2 rounded-full 
+              text-white text-2xl 
+            "
+          >
+            ›
+          </button>
 
-            {/* LEFT ARROW (Mobile) */}
+          {/* Scrollable Button Row */}
+          <div
+            id="catScroll"
+            className="
+              md:grid md:grid-cols-3 
+              flex overflow-x-auto 
+              whitespace-nowrap 
+              scrollbar-hide
+              text-center
+            "
+          >
+            {/* Residential Projects */}
             <button
-              onClick={() =>
-                document.getElementById("catScroll").scrollBy({
-                  left: -200,
-                  behavior: "smooth",
-                })
-              }
-              className="
-                md:hidden 
-                absolute left-0 top-1/2 -translate-y-1/2 
-                z-40 
-                bg-black/40 backdrop-blur-sm 
-                px-3 py-2 rounded-full 
-                text-white text-2xl 
-              "
+              onClick={() => setActive(0)}
+              className={`
+                py-6 min-w-[250px] md:min-w-0 
+                border-r border-white/20 
+                transition 
+                ${active === 0 ? "bg-white/20" : "hover:bg-white/10"}
+              `}
             >
-              ‹
+              <i className="fas fa-home text-2xl mb-2"></i>
+              <p className="text-lg font-medium">Residential Projects</p>
+              <span className="block text-sm opacity-80">
+                Villas & Apartments
+              </span>
             </button>
 
-            {/* RIGHT ARROW (Mobile) */}
+            {/* High-Rise Apartments */}
             <button
-              onClick={() =>
-                document.getElementById("catScroll").scrollBy({
-                  left: 200,
-                  behavior: "smooth",
-                })
-              }
-              className="
-                md:hidden 
-                absolute right-0 top-1/2 -translate-y-1/2 
-                z-40 
-                bg-black/40 backdrop-blur-sm 
-                px-3 py-2 rounded-full 
-                text-white text-2xl 
-              "
+              onClick={() => setActive(1)}
+              className={`
+                py-6 min-w-[250px] md:min-w-0 
+                border-r border-white/20 
+                transition 
+                ${active === 1 ? "bg-white/20" : "hover:bg-white/10"}
+              `}
             >
-              ›
+              <i className="fas fa-building text-2xl mb-2"></i>
+              <p className="text-lg font-medium">High-Rise Apartments</p>
+              <span className="block text-sm opacity-80">
+                Modern Urban Living
+              </span>
             </button>
 
-            {/* Scrollable Button Row */}
-            <div
-              id="catScroll"
-              className="
-                md:grid md:grid-cols-3 
-                flex overflow-x-auto 
-                whitespace-nowrap 
-                scrollbar-hide
-                text-center
-              "
+            {/* Commercial Projects */}
+            <button
+              onClick={() => setActive(2)}
+              className={`
+                py-6 min-w-[250px] md:min-w-0 
+                transition 
+                ${active === 2 ? "bg-white/20" : "hover:bg-white/10"}
+              `}
             >
-              {/* Residential Projects */}
-                <button
-                  onClick={() => setActive(0)}
-                  className={`
-                    py-6 min-w-[250px] md:min-w-0 
-                    border-r border-white/20 
-                    transition 
-                    ${active === 0 ? "bg-white/20" : "hover:bg-white/10"}
-                  `}
-                >
-                  <i className="fas fa-home text-2xl mb-2"></i>
-                  <p className="text-lg font-medium">Residential Projects</p>
-                  <span className="block text-sm opacity-80">
-                    Villas & Apartments
-                  </span>
-                </button>
-
-                {/* Apartments */}
-                <button
-                  onClick={() => setActive(1)}
-                  className={`
-                    py-6 min-w-[250px] md:min-w-0 
-                    border-r border-white/20 
-                    transition 
-                    ${active === 1 ? "bg-white/20" : "hover:bg-white/10"}
-                  `}
-                >
-                  <i className="fas fa-building text-2xl mb-2"></i>
-                  <p className="text-lg font-medium">High-Rise Apartments</p>
-                  <span className="block text-sm opacity-80">
-                    Modern Urban Living
-                  </span>
-                </button>
-
-                {/* Commercial */}
-                <button
-                  onClick={() => setActive(2)}
-                  className={`
-                    py-6 min-w-[250px] md:min-w-0 
-                    transition 
-                    ${active === 2 ? "bg-white/20" : "hover:bg-white/10"}
-                  `}
-                >
-                  <i className="fas fa-city text-2xl mb-2"></i>
-                  <p className="text-lg font-medium">Commercial Projects</p>
-                  <span className="block text-sm opacity-80">
-                    Office & Retail Spaces
-                  </span>
-                </button>
-
-            </div>
+              <i className="fas fa-city text-2xl mb-2"></i>
+              <p className="text-lg font-medium">Commercial Projects</p>
+              <span className="block text-sm opacity-80">
+                Office & Retail Spaces
+              </span>
+            </button>
           </div>
         </div>
-
+      </div>
     </section>
   );
 }

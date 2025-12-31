@@ -156,27 +156,30 @@ export default function Contact() {
 
 
       {/* MAP */}
-      <section className="py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center mb-10">
-          <p className="text-xs tracking-widest text-gray-500 mb-3">
-            OUR LOCATION
-          </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif">
-            Visit Grace Homes Studio
-          </h2>
-        </div>
+<section className="py-16 sm:py-20">
+  <div className="max-w-7xl mx-auto px-4 text-center mb-10">
+    <p className="text-xs tracking-widest text-gray-500 mb-3">
+      OUR LOCATION
+    </p>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif">
+      Visit Grace Homes Studio
+    </h2>
+  </div>
 
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="w-full h-[300px] sm:h-[380px] md:h-[420px] rounded-xl overflow-hidden shadow border">
-            <iframe
-              title="Office Location"
-              src="https://www.google.com/maps?q=Bhubaneswar,Odisha&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="w-full h-[300px] sm:h-[380px] md:h-[420px] rounded-xl overflow-hidden shadow border">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.1346472444607!2d85.8443035!3d20.2946931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19095f266de881%3A0x79148229117f1177!2sGrace%20Homes!5e0!3m2!1sen!2sin!4v1767174391210!5m2!1sen!2sin"
+        className="w-full h-full border-0"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* FAQ */}
       <section className="py-20">
