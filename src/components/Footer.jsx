@@ -105,7 +105,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3 mt-4 md:mt-0">
             <div className="flex items-start gap-2">
               <FiMapPin size={18} className="text-white mt-1" />
-              <p className="text-sm max-w-xs">Plot No. 12, Khandagiri, Bhubaneswar, Odisha, 751030</p>
+              <p className="text-sm max-w-xs">A-144, Saheed Nagar, Bhubaneswar, Odisha 751007</p>
             </div>
             <div className="flex items-start gap-2">
             <FiMail size={18} className="text-white mt-1" />
